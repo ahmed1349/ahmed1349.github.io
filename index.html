@@ -3,45 +3,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Rabea - Skills</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ahmed Rabea | Software Engineer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header & Navigation -->
     <header>
-        <h1>Ahmed Rabea</h1>
-        <p>Software Engineer | AI Engineer | Data Analyst</p>
+        <div class="container">
+            <nav>
+                <div class="logo">Ahmed Rabea;</div>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="hamburger-lines">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                        <div class="line line3"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    
-    <section class="skills">
-        <h2>My Skills</h2>
-        <div class="skill-list">
-            <div class="skill">HTML & CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Machine learning</div>
-            <div class="skill">Python</div>
-            <div class="skill">Data Analysis</div>
-            <div class="skill">SQLite & MySQL</div>
-            <div class="skill">Networking & Security</div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h1>Hello, I'm <span>Ahmed Rabea</span></h1>
+                    <p>A passionate software engineer specializing in web application and AI development. I create impactful digital solutions that solve real-world problems.</p>
+                    <a href="#projects" class="btn">View My Work</a>
+                    <div class="social-icons">
+                        <a href="https://github.com/ahmedrabea" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/ahmedrabea" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/ahmedrabea" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in">
+                    <img src="images/profile.webp" alt="Ahmed Rabea">
+                </div>
+            </div>
         </div>
     </section>
-    
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image slide-in-left">
+                    <img src="images/about.webp" alt="Ahmed working">
+                </div>
+                <div class="about-text slide-in-right">
+                    <h3>Software Engineer & AI Developer</h3>
+                    <p>I am a fourth-year Software Engineering student at NCT University with a strong focus on web application and AI development. My passion lies in creating innovative digital solutions that address real user needs.</p>
+                    <p>As a team leader, I have successfully led multiple projects, utilizing my technical skills in HTML, CSS, JavaScript, PHP, and MySQL to deliver robust applications. My academic journey has equipped me with exceptional problem-solving abilities and a deep understanding of software engineering principles.</p>
+                    <p>I believe in collaborative development and continuously expanding my knowledge in emerging technologies. My goal is to create meaningful applications that make a positive impact in people's lives.</p>
+                    <div class="skills">
+                        <div class="skill">HTML5</div>
+                        <div class="skill">CSS3</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">PHP</div>
+                        <div class="skill">MySQL</div>
+                        <div class="skill">React.js</div>
+                        <div class="skill">Node.js</div>
+                        <div class="skill">AI Development</div>
+                        <div class="skill">UI/UX Design</div>
+                        <div class="skill">Python</div>
+                        <div class="skill">Git</div>
+                        <div class="skill">Problem Solving</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="E-Commerce Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                        <p>A full-featured e-commerce platform with user authentication, product catalog, cart management, and secure payment integration.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/ahmedrabea" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="AI-Powered Chatbot">
+                    </div>
+                    <div class="project-info">
+                        <h3>AI-Powered Chatbot</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">NLP</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <p>An intelligent chatbot that uses natural language processing to provide customer support and answer common questions.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/ahmedrabea" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Task Management System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management System</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">React.js</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Express</span>
+                        </div>
+                        <p>A collaborative task management application with real-time updates, team assignments, progress tracking, and deadline notifications.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/ahmedrabea" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="images/project4.jpg" alt="Smart Home Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart Home Dashboard</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">IoT</span>
+                            <span class="project-tag">React.js</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <p>A responsive dashboard for controlling smart home devices with energy monitoring, automation rules, and data visualization.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/ahmedrabea" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="images/project5.jpg" alt="Health Monitoring App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Health Monitoring App</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Machine Learning</span>
+                        </div>
+                        <p>A mobile application that helps users track their health metrics, set goals, and receive personalized recommendations based on AI analysis.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/ahmedrabea" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="images/project6.jpg" alt="Educational Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>Educational Platform</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">HTML/CSS</span>
+                        </div>
+                        <p>An online learning platform with video lectures, interactive quizzes, progress tracking, and a certificate generation system.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/ahmedrabea" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            <div class="timeline">
+                <!-- Experience Item 1 -->
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-role">Software Engineering Intern</div>
+                        <div class="timeline-company">TechSolutions Inc.</div>
+                        <p>Working on developing and maintaining web applications using React.js and Node.js. Collaborating with senior developers to implement new features and improve existing ones.</p>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <div class="timeline-role">Project Team Lead</div>
+                        <div class="timeline-company">University Software Club</div>
+                        <p>Led a team of 5 students to develop a campus management system. Managed project timelines, assigned tasks, and ensured code quality and timely delivery.</p>
+                    </div>
+                </div>
+
+                <!-- Education Item 1 -->
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2025</div>
+                        <div class="timeline-role">Bachelor of Science in Software Engineering</div>
+                        <div class="timeline-company">NCT University</div>
+                        <p>Specializing in web application development and artificial intelligence. GPA: 3.8/4.0. Relevant coursework includes Data Structures, Algorithms, Web Development, Database Systems, and Machine Learning.</p>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <div class="timeline-role">Web Development Freelancer</div>
+                        <div class="timeline-company">Self-Employed</div>
+                        <p>Developed custom websites for small businesses and startups. Created responsive designs, implemented content management systems, and provided ongoing maintenance and support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Contact Information</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>ahmed.rabea@example.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>New York City, NY</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Connect With Me</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <span>linkedin.com/in/ahmedrabea</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <span>github.com/ahmedrabea</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-twitter"></i>
+                                <span>twitter.com/ahmedrabea</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Ahmed Rabea. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-logo">Ahmed Rabea</div>
+            <p class="footer-text">Creating innovative digital solutions to make a positive impact.</p>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="copyright">© 2025 Ahmed Rabea. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const skills = document.querySelectorAll(".skill");
-            skills.forEach((skill, index) => {
-                skill.style.opacity = "0";
-                skill.style.transform = "translateY(20px)";
-                setTimeout(() => {
-                    skill.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
-                    skill.style.opacity = "1";
-                    skill.style.transform = "translateY(0)";
-                }, index * 200);
-            });
-        });
-    </script>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>

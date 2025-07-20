@@ -125,6 +125,10 @@ nav {
 
 .nav-links a:hover {
     color: var(--primary-color);
+    transform: translateY(-3px);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 8px;
+
 }
 
 .hamburger {

@@ -91,7 +91,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.dark.glass-effect {
+.dark .glass-effect {
     background-color: rgba(17, 25, 40, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
@@ -112,7 +112,14 @@
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Tilt effect helper */
+.tilt {
+    will-change: transform;
+    transform-style: preserve-3d;
 }
 
 /* Navigation Link Effects */
@@ -214,6 +221,16 @@ a:focus {
     .container {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    
+    /* Improve hero on mobile: avoid fixed backgrounds and add spacing */
+    .gradient-bg {
+        background-attachment: scroll;
+        background-position: center top;
+    }
+    #home {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
     }
     
     .text-5xl {

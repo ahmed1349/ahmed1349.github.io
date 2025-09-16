@@ -213,6 +213,8 @@ function initializePortfolio() {
     setupTypingAnimation();
     setupContactForm();
     setupIntersectionObserver();
+    setupTiltEffect();
+    setupParallax();
     
     // Initialize theme and language from localStorage
     loadUserPreferences();
@@ -288,6 +290,12 @@ function setupMobileMenu() {
     
     mobileMenuToggle.addEventListener('click', function() {
         mobileMenu.classList.toggle('hidden');
+        // prevent body scroll when menu open
+        if (!mobileMenu.classList.contains('hidden')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
     });
     
     // Close mobile menu when clicking on a link
@@ -295,7 +303,17 @@ function setupMobileMenu() {
     mobileLinks.forEach(link => {
         link.addEventListener('click', function() {
             mobileMenu.classList.add('hidden');
+            document.body.style.overflow = '';
         });
+    });
+
+    // Close when clicking outside the menu area
+    document.addEventListener('click', (e) => {
+        const nav = document.querySelector('nav');
+        if (!nav.contains(e.target) && !mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
     });
 }
 
@@ -470,6 +488,37 @@ function setupIntersectionObserver() {
         element.style.transition = 'all 0.8s ease';
         observer.observe(element);
     });
+}
+
+// 3D Tilt on project cards
+function setupTiltEffect() {
+    const cards = document.querySelectorAll('.tilt');
+    const constrain = 20;
+    cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const rotateY = ((x / rect.width) - 0.5) * (constrain * 2);
+            const rotateX = -((y / rect.height) - 0.5) * (constrain * 2);
+            card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+        });
+    });
+}
+
+// Subtle parallax for home background
+function setupParallax() {
+    const home = document.getElementById('home');
+    if (!home) return;
+    const overlay = home.querySelector('.absolute.inset-0');
+    window.addEventListener('scroll', () => {
+        const offset = window.scrollY * 0.2;
+        home.style.backgroundPositionY = `-${offset}px`;
+        if (overlay) overlay.style.backgroundOpacity = Math.min(0.4, 0.2 + window.scrollY / 2000);
+    }, { passive: true });
 }
 
 // User Preferences

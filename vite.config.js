@@ -6,6 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(),
   tailwindcss()],
-  base: '/ahmed1349.github.io/',
-
+   base: '/',
 })

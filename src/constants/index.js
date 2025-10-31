@@ -228,12 +228,14 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
+    name: "GitHub",
+    url: "https://github.com/ahmed1349",
+    imgPath: "/images/git.png",
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
+    name: "CV",
+    url: "https://drive.google.com/file/d/1VN0mjoJA-GcL7pOmnLiZBZ1NnAoDohfK/view?usp=sharing",
+    imgPath: "/images/cv.png",
   },
   {
     name: "x",
@@ -241,6 +243,7 @@ const socialImgs = [
   },
   {
     name: "linkedin",
+    url: "https://www.linkedin.com/in/ahmed-rabea-abdalsalam/",
     imgPath: "/images/linkedin.png",
   },
 ];

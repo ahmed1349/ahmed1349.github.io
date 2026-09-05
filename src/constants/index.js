@@ -145,11 +145,27 @@ const techStackIcons = [
 
 const expCards = [
   {
+    review:
+      "At Origin Technologies FZCO, Ahmed contributes as a Software Engineer on a collaborative team delivering end-to-end, production-ready software across the full product lifecycle.",
+    imgPath: "/images/logos/origin-original-logo.png",
+    logoPath: "/images/logos/origin-original-logo.png",
+    title: "Software Engineer",
+    company: "Origin Technologies FZCO",
+    date: "2025 – Present",
+    responsibilities: [
+      "Work as part of a collaborative engineering team delivering end-to-end software solutions, with a primary focus on full-stack development using React and Django.",
+      "Contribute across the full product lifecycle, from concept and system design through development, deployment, and long-term maintenance.",
+      "Build and integrate intelligent, data-driven systems, including IoT-oriented applications, so frontend interfaces, backend services, and data pipelines operate together.",
+      "Take ownership of features front-to-back, ensuring reliable integration across system layers and production readiness.",
+      "Contribute to R&D initiatives involving machine-based development and computer vision, working with both established frameworks and emerging technologies.",
+    ],
+  },
+  {
     review: "Ahmed combined creativity with strong technical expertise to greatly enhance our frontend performance, playing a key role in delivering faster and more efficient user experiences.",
     imgPath: "/images/logo01.png",
     logoPath: "/images/logo01.png",
     title: "Software Engineer && Frontend Developer",
-    date: "OCT 2024 - Part-time - Present",
+    date: "OCT 2024 - Part-time - 2026",
     responsibilities: [
       "Communicated directly with clients to gather requirements and translate their needs into functional, visually appealing web solutions.",
       "Designed and developed responsive frontend interfaces, ensuring smooth interaction and optimal user experience across all devices.",
@@ -234,7 +250,7 @@ const socialImgs = [
   },
   {
     name: "CV",
-    url: "https://drive.google.com/file/d/1VN0mjoJA-GcL7pOmnLiZBZ1NnAoDohfK/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1H8ZoSGlErCZWGEifbElwcHNZIKGmbFNk/view?usp=sharing",
     imgPath: "/images/cv.png",
   },
   {

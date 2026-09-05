@@ -49,20 +49,20 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project01.jpg" alt="Real estate platform" />
+              <img
+                src="/images/oee.jpg"
+                alt="OEE manufacturing performance dashboard"
+              />
             </div>
             <div className="text-content">
-              <h2>
-                Real estate platform
-              </h2>
+              <h2>OEE Manufacturing Performance Dashboard</h2>
               <p className="text-white-50 md:text-xl">
-                 that aims to
-                 facilitate real estate search and display operations in Egypt, with a focus on transparency, quality and technical innovation. .
+                A live Overall Equipment Effectiveness dashboard for
+                manufacturing performance, combining availability, performance,
+                and quality metrics with real-time trends, downtime analysis,
+                and IoT-oriented monitoring.
               </p>
             </div>
-                <div className="contact-btn group"> 
-                <a href="https://aqarutna.com/">Live</a>
-              </div>
           </div>
 
           <div className="project-list-wrapper overflow-hidden">
